@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="night">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ════════════════════ SKY ════════════════════ -->
+  <div class="sky">
+    <!-- Clouds -->
+    <div class="cloud" style="top:10%;--cm:58s;--cd:-18s">
+      <svg width="140" height="55" viewBox="0 0 140 55" fill="none">
+        <ellipse cx="70" cy="40" rx="65" ry="15" fill="rgba(255,255,255,0.72)" />
+        <ellipse cx="52" cy="28" rx="32" ry="22" fill="rgba(255,255,255,0.72)" />
+        <ellipse cx="88" cy="24" rx="26" ry="18" fill="rgba(255,255,255,0.72)" />
+      </svg>
+    </div>
+    <div class="cloud" style="top:18%;--cm:76s;--cd:-40s">
+      <svg width="180" height="64" viewBox="0 0 180 64" fill="none">
+        <ellipse cx="90" cy="48" rx="84" ry="17" fill="rgba(255,255,255,0.65)" />
+        <ellipse cx="66" cy="32" rx="40" ry="26" fill="rgba(255,255,255,0.65)" />
+        <ellipse cx="112" cy="28" rx="34" ry="22" fill="rgba(255,255,255,0.65)" />
+      </svg>
+    </div>
+    <div class="cloud" style="top:6%;--cm:46s;--cd:-8s">
+      <svg width="100" height="42" viewBox="0 0 100 42" fill="none">
+        <ellipse cx="50" cy="30" rx="46" ry="12" fill="rgba(255,255,255,0.60)" />
+        <ellipse cx="36" cy="20" rx="24" ry="16" fill="rgba(255,255,255,0.60)" />
+        <ellipse cx="64" cy="18" rx="20" ry="14" fill="rgba(255,255,255,0.60)" />
+      </svg>
+    </div>
+
+    <div class="sun"></div>
+    <div class="moon-halo"></div>
+    <div class="moon"></div>
+    <div class="stars" id="stars"></div>
+    <div class="shoot"></div>
+  </div>
+
+  <!-- Fireflies -->
+  <div id="fflies"></div>
+
+  <!-- ════════════════════ FOREST ════════════════════ -->
+  <div class="forest">
+    <div class="mist"></div>
+    <svg class="forest-svg" viewBox="0 0 1440 220" preserveAspectRatio="xMidYMax meet"
+      xmlns="http://www.w3.org/2000/svg">
+      <!-- bg layer -->
+      <g opacity="0.32">
+        <g class="sws" style="transform-origin:100px 200px">
+          <polygon points="100,70 76,175 124,175" fill="var(--f1)" />
+          <polygon points="100,108 70,183 130,183" fill="var(--f2)" />
+          <rect x="96" y="180" width="8" height="26" fill="var(--trunk)" />
+        </g>
+        <g class="swr" style="transform-origin:270px 200px">
+          <polygon points="270,58 242,172 298,172" fill="var(--f1)" />
+          <polygon points="270,98 236,180 304,180" fill="var(--f2)" />
+          <rect x="266" y="177" width="8" height="29" fill="var(--trunk)" />
+        </g>
+        <g class="swl" style="transform-origin:470px 200px">
+          <polygon points="470,64 440,174 500,174" fill="var(--f1)" />
+          <polygon points="470,104 434,182 506,182" fill="var(--f2)" />
+          <rect x="466" y="179" width="8" height="27" fill="var(--trunk)" />
+        </g>
+        <g class="sws" style="transform-origin:680px 200px">
+          <polygon points="680,60 652,172 708,172" fill="var(--f1)" />
+          <polygon points="680,100 646,180 714,180" fill="var(--f2)" />
+          <rect x="676" y="177" width="8" height="29" fill="var(--trunk)" />
+        </g>
+        <g class="swr" style="transform-origin:880px 200px">
+          <polygon points="880,66 852,174 908,174" fill="var(--f1)" />
+          <polygon points="880,106 846,182 914,182" fill="var(--f2)" />
+          <rect x="876" y="179" width="8" height="27" fill="var(--trunk)" />
+        </g>
+        <g class="swl" style="transform-origin:1090px 200px">
+          <polygon points="1090,62 1062,172 1118,172" fill="var(--f1)" />
+          <polygon points="1090,102 1056,180 1124,180" fill="var(--f2)" />
+          <rect x="1086" y="177" width="8" height="29" fill="var(--trunk)" />
+        </g>
+        <g class="sws" style="transform-origin:1300px 200px">
+          <polygon points="1300,68 1272,176 1328,176" fill="var(--f1)" />
+          <polygon points="1300,108 1266,184 1334,184" fill="var(--f2)" />
+          <rect x="1296" y="181" width="8" height="25" fill="var(--trunk)" />
+        </g>
+      </g>
+      <!-- mid layer -->
+      <g opacity="0.60">
+        <g class="swl" style="transform-origin:30px 215px">
+          <polygon points="30,20 2,145 58,145" fill="var(--f1)" />
+          <polygon points="30,62 -4,157 64,157" fill="var(--f2)" />
+          <polygon points="30,102 -8,167 68,167" fill="var(--f3)" />
+          <rect x="24" y="164" width="12" height="38" fill="var(--trunk)" />
+        </g>
+        <g class="swr" style="transform-origin:190px 215px">
+          <polygon points="190,14 158,142 222,142" fill="var(--f1)" />
+          <polygon points="190,56 152,155 228,155" fill="var(--f2)" />
+          <polygon points="190,98 146,166 234,166" fill="var(--f3)" />
+          <rect x="184" y="163" width="12" height="39" fill="var(--trunk)" />
+        </g>
+        <g class="sws" style="transform-origin:380px 215px">
+          <polygon points="380,22 348,146 412,146" fill="var(--f1)" />
+          <polygon points="380,64 342,158 418,158" fill="var(--f2)" />
+          <polygon points="380,106 336,168 424,168" fill="var(--f3)" />
+          <rect x="374" y="165" width="12" height="37" fill="var(--trunk)" />
+        </g>
+        <g class="swl" style="transform-origin:580px 215px">
+          <polygon points="580,18 548,144 612,144" fill="var(--f1)" />
+          <polygon points="580,60 542,156 618,156" fill="var(--f2)" />
+          <polygon points="580,102 536,167 624,167" fill="var(--f3)" />
+          <rect x="574" y="164" width="12" height="38" fill="var(--trunk)" />
+        </g>
+        <g class="swr" style="transform-origin:790px 215px">
+          <polygon points="790,20 758,145 822,145" fill="var(--f1)" />
+          <polygon points="790,62 752,157 828,157" fill="var(--f2)" />
+          <polygon points="790,104 746,167 834,167" fill="var(--f3)" />
+          <rect x="784" y="164" width="12" height="38" fill="var(--trunk)" />
+        </g>
+        <g class="sws" style="transform-origin:1000px 215px">
+          <polygon points="1000,16 966,142 1034,142" fill="var(--f1)" />
+          <polygon points="1000,58 960,155 1040,155" fill="var(--f2)" />
+          <polygon points="1000,100 954,166 1046,166" fill="var(--f3)" />
+          <rect x="994" y="163" width="12" height="39" fill="var(--trunk)" />
+        </g>
+        <g class="swl" style="transform-origin:1200px 215px">
+          <polygon points="1200,20 1168,145 1232,145" fill="var(--f1)" />
+          <polygon points="1200,62 1162,157 1238,157" fill="var(--f2)" />
+          <polygon points="1200,104 1156,167 1244,167" fill="var(--f3)" />
+          <rect x="1194" y="164" width="12" height="38" fill="var(--trunk)" />
+        </g>
+        <g class="swr" style="transform-origin:1400px 215px">
+          <polygon points="1400,25 1368,148 1432,148" fill="var(--f1)" />
+          <polygon points="1400,68 1362,160 1438,160" fill="var(--f2)" />
+          <polygon points="1400,110 1356,170 1444,170" fill="var(--f3)" />
+          <rect x="1394" y="167" width="12" height="35" fill="var(--trunk)" />
+        </g>
+      </g>
+      <!-- foreground -->
+      <g>
+        <g class="swr" style="transform-origin:0px 220px">
+          <polygon points="0,-15 -48,120 48,120" fill="var(--f1)" />
+          <polygon points="0,36 -56,138 56,138" fill="var(--f2)" />
+          <polygon points="0,86 -60,152 60,152" fill="var(--f3)" />
+          <polygon points="0,118 -62,162 62,162" fill="var(--f4)" />
+          <rect x="-7" y="159" width="14" height="53" fill="var(--trunk)" />
+        </g>
+        <g class="swl" style="transform-origin:145px 220px">
+          <polygon points="145,-5 95,122 195,122" fill="var(--f1)" />
+          <polygon points="145,44 88,140 202,140" fill="var(--f2)" />
+          <polygon points="145,92 82,154 208,154" fill="var(--f3)" />
+          <polygon points="145,122 80,164 210,164" fill="var(--f4)" />
+          <rect x="138" y="161" width="14" height="51" fill="var(--trunk)" />
+        </g>
+        <g class="sws" style="transform-origin:330px 220px">
+          <polygon points="330,-10 278,122 382,122" fill="var(--f1)" />
+          <polygon points="330,40 272,140 388,140" fill="var(--f2)" />
+          <polygon points="330,90 266,154 394,154" fill="var(--f3)" />
+          <polygon points="330,120 264,164 396,164" fill="var(--f4)" />
+          <rect x="323" y="161" width="14" height="51" fill="var(--trunk)" />
+        </g>
+        <g class="swl" style="transform-origin:540px 220px">
+          <polygon points="540,-18 486,122 594,122" fill="var(--f1)" />
+          <polygon points="540,34 478,140 602,140" fill="var(--f2)" />
+          <polygon points="540,86 472,154 608,154" fill="var(--f3)" />
+          <polygon points="540,118 470,164 610,164" fill="var(--f4)" />
+          <rect x="533" y="161" width="14" height="51" fill="var(--trunk)" />
+        </g>
+        <g class="swr" style="transform-origin:760px 220px">
+          <polygon points="760,-12 708,122 812,122" fill="var(--f1)" />
+          <polygon points="760,38 700,140 820,140" fill="var(--f2)" />
+          <polygon points="760,88 694,154 826,154" fill="var(--f3)" />
+          <polygon points="760,120 692,164 828,164" fill="var(--f4)" />
+          <rect x="753" y="161" width="14" height="51" fill="var(--trunk)" />
+        </g>
+        <g class="sws" style="transform-origin:980px 220px">
+          <polygon points="980,-15 928,122 1032,122" fill="var(--f1)" />
+          <polygon points="980,36 920,140 1040,140" fill="var(--f2)" />
+          <polygon points="980,86 914,154 1046,154" fill="var(--f3)" />
+          <polygon points="980,118 912,164 1048,164" fill="var(--f4)" />
+          <rect x="973" y="161" width="14" height="51" fill="var(--trunk)" />
+        </g>
+        <g class="swl" style="transform-origin:1190px 220px">
+          <polygon points="1190,-8 1138,122 1242,122" fill="var(--f1)" />
+          <polygon points="1190,42 1130,140 1250,140" fill="var(--f2)" />
+          <polygon points="1190,92 1124,154 1256,154" fill="var(--f3)" />
+          <polygon points="1190,122 1122,164 1258,164" fill="var(--f4)" />
+          <rect x="1183" y="161" width="14" height="51" fill="var(--trunk)" />
+        </g>
+        <g class="swr" style="transform-origin:1400px 220px">
+          <polygon points="1400,-5 1348,122 1452,122" fill="var(--f1)" />
+          <polygon points="1400,44 1340,140 1460,140" fill="var(--f2)" />
+          <polygon points="1400,94 1334,154 1466,154" fill="var(--f3)" />
+          <polygon points="1400,124 1332,164 1468,164" fill="var(--f4)" />
+          <rect x="1393" y="161" width="14" height="51" fill="var(--trunk)" />
+        </g>
+      </g>
+    </svg>
+    <div class="ground-strip"></div>
+  </div>
+
+  <!-- ════════════════════ NAV ════════════════════ -->
+  <nav>
+    <a class="nav-logo" href="#" onclick="goPage('home');return false;"><div class="nav-avatar"><img src="port/profile.jpg" alt="" onerror="this.style.display='none'"></div><span class="nav-logo-name">Thanawat Udcha <span>✦</span></span></a>
+    <ul class="nav-pages" id="navPages">
+      <li><a href="#" class="active" data-page="home">Home</a></li>
+      <li><a href="#" data-page="profile">Profile</a></li>
+      <li><a href="#" data-page="experience">Experience</a></li>
+      <li><a href="#" data-page="selfdev">Self-Dev</a></li>
+      <li><a href="#" data-page="awards">Awards</a></li>
+      <li><a href="#" data-page="leadership">Leadership</a></li>
+    </ul>
+    <div class="tog-wrap">
+      <span class="tog-lbl" id="togLbl">Nighttime</span>
+      <button class="tog" id="togBtn" aria-label="Toggle theme">
+        <div class="tog-k" id="togK">🌙</div>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ════════════════════ PAGES ════════════════════ -->
+  <div class="page-wrap">
+
+    <!-- ── HOME ── -->
+    <div class="page active" id="page-home">
+      <div class="hero">
+        <div class="hero-content">
+          <div class="hero-eyebrow">Full-Stack Developer &amp; UX Designer</div>
+          <h1>Thanawat<br><em>Udcha</em></h1>
+          <p class="hero-role">19 y/o · Chiang Mai, Thailand · Open to opportunities</p>
+          <p class="hero-desc">I build systems that solve real problems — from AI navigation aids for the visually
+            impaired to smart city infrastructure. I care about the people who use what I make.</p>
+          <div class="hero-pills">
+            <span class="hero-pill">Java · Python · JavaScript</span>
+            <span class="hero-pill">Node.js · MySQL · MongoDB</span>
+            <span class="hero-pill">UX/UI · Design Thinking</span>
+          </div>
+          <div class="hero-btns">
+            <button class="btn-main" onclick="goPage('experience')">View Projects</button>
+            <button class="btn-ghost" onclick="goPage('profile')">About Me</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats bar -->
+      <div class="sec" style="padding-top:0">
+        <div class="home-stats">
+          <div class="home-stat">
+            <div class="home-stat-num">6+</div>
+            <div class="home-stat-lbl">Projects</div>
+          </div>
+          <div class="home-stat-div"></div>
+          <div class="home-stat">
+            <div class="home-stat-num">🥈</div>
+            <div class="home-stat-lbl">Hackathon 2nd</div>
+          </div>
+          <div class="home-stat-div"></div>
+          <div class="home-stat">
+            <div class="home-stat-num">฿10K</div>
+            <div class="home-stat-lbl">Freelance</div>
+          </div>
+          <div class="home-stat-div"></div>
+          <div class="home-stat">
+            <div class="home-stat-num">3+</div>
+            <div class="home-stat-lbl">Orgs Served</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured projects -->
+      <div class="sec" style="padding-top:0">
+        <div class="home-section-label">🌟 Featured Projects</div>
+        <div class="home-feat-grid">
+
+          <div class="card home-feat-card" onclick="goPage('experience')">
+            <div class="home-feat-top">
+              <span class="badge badge-comp">Competition</span>
+              <span class="home-feat-award">🥈 2nd Place</span>
+            </div>
+            <div class="home-feat-title">Mongmai</div>
+            <div class="home-feat-sub">AI Vision Aid for the Visually Impaired</div>
+            <p class="home-feat-desc">Wearable AI ตรวจจับอุปสรรคและแจ้งเตือนด้วยเสียง real-time สำหรับผู้พิการทางสายตา — HYLIFE Hackathon 2025</p>
+            <div class="home-feat-tags">
+              <span class="proj-tag">Python</span>
+              <span class="proj-tag">Raspberry Pi</span>
+              <span class="proj-tag">Computer Vision</span>
+            </div>
+          </div>
+
+          <div class="card home-feat-card" onclick="goPage('experience')">
+            <div class="home-feat-top">
+              <span class="badge badge-prod">Production</span>
+              <span class="home-feat-award">🏙️ Gov Project</span>
+            </div>
+            <div class="home-feat-title">Smart CCTV System</div>
+            <div class="home-feat-sub">สำนักงานจังหวัดเชียงใหม่</div>
+            <p class="home-feat-desc">Dashboard real-time พร้อม AI นับจำนวนคน ตรวจจับ VIP และแจ้งเตือนอัตโนมัติสำหรับเจ้าหน้าที่รัฐ</p>
+            <div class="home-feat-tags">
+              <span class="proj-tag">Python</span>
+              <span class="proj-tag">Node.js</span>
+              <span class="proj-tag">Computer Vision</span>
+            </div>
+          </div>
+
+          <div class="card home-feat-card" onclick="goPage('experience')">
+            <div class="home-feat-top">
+              <span class="badge badge-prod">Production</span>
+              <span class="home-feat-award">💰 ฿10,000</span>
+            </div>
+            <div class="home-feat-title">Library System</div>
+            <div class="home-feat-sub">โรงเรียนศรีดอนชัย</div>
+            <p class="home-feat-desc">ระบบห้องสมุดดิจิทัล barcode scan ยืม-คืนอัตโนมัติ แทนระบบกระดาษทั้งหมด — งาน freelance ครั้งแรก</p>
+            <div class="home-feat-tags">
+              <span class="proj-tag">PHP</span>
+              <span class="proj-tag">MySQL</span>
+              <span class="proj-tag">Barcode</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- About me snapshot -->
+      <div class="sec" style="padding-top:0">
+        <div class="home-section-label">🧑‍💻 About Me</div>
+        <div class="card home-about-card">
+          <div class="home-about-left">
+            <p class="home-about-text">
+              I'm a motivated student passionate about building user-friendly and reliable systems as a Full-Stack Developer.
+              Through hands-on experience across production, hackathon, and freelance projects, I've gained insights into
+              real-world limitations and enjoy finding innovative solutions. I consistently apply UX/UI principles to ensure
+              seamless user experiences — and I care deeply about the people who use what I make.
+            </p>
+            <div class="home-about-meta">
+              <span class="home-meta-item">🎓 CAMT · Chiang Mai University</span>
+              <span class="home-meta-item">⭐ GPA 3.40</span>
+              <span class="home-meta-item">🇹🇭 Thai · 🇬🇧 English B1</span>
+            </div>
+          </div>
+          <div class="home-about-right">
+            <div class="home-soft-row">
+              <span class="home-soft-chip">🤝 Teamwork</span>
+              <span class="home-soft-chip">🧩 Problem-solving</span>
+              <span class="home-soft-chip">💡 Creativity</span>
+              <span class="home-soft-chip">⏱️ Time Management</span>
+              <span class="home-soft-chip">🗣️ Communication</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills snapshot -->
+      <div class="sec" style="padding-top:0">
+        <div class="home-section-label">⚡ Skills Snapshot</div>
+        <div class="home-skills-grid">
+          <div class="card home-skill-block">
+            <div class="home-skill-cat">💻 Programming</div>
+            <div class="home-skill-chips">
+              <span class="home-skill-chip hl">Python</span>
+              <span class="home-skill-chip hl">JavaScript</span>
+              <span class="home-skill-chip">Java</span>
+              <span class="home-skill-chip">PHP</span>
+              <span class="home-skill-chip">C</span>
+              <span class="home-skill-chip">HTML</span>
+              <span class="home-skill-chip">CSS</span>
+            </div>
+          </div>
+          <div class="card home-skill-block">
+            <div class="home-skill-cat">🌐 Web &amp; DB</div>
+            <div class="home-skill-chips">
+              <span class="home-skill-chip hl">Node.js</span>
+              <span class="home-skill-chip hl">MySQL</span>
+              <span class="home-skill-chip">MongoDB</span>
+              <span class="home-skill-chip">Git</span>
+              <span class="home-skill-chip">GitHub</span>
+            </div>
+          </div>
+          <div class="card home-skill-block">
+            <div class="home-skill-cat">🎨 UX / Design</div>
+            <div class="home-skill-chips">
+              <span class="home-skill-chip hl">Design Thinking</span>
+              <span class="home-skill-chip">Persona</span>
+              <span class="home-skill-chip">Empathy Map</span>
+              <span class="home-skill-chip">User Journey</span>
+              <span class="home-skill-chip">JTBD</span>
+            </div>
+          </div>
+          <div class="card home-skill-block">
+            <div class="home-skill-cat">🤖 Speciality</div>
+            <div class="home-skill-chips">
+              <span class="home-skill-chip hl">Computer Vision</span>
+              <span class="home-skill-chip hl">YOLOv8</span>
+              <span class="home-skill-chip">OpenCV</span>
+              <span class="home-skill-chip">Raspberry Pi</span>
+              <span class="home-skill-chip">Flask</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick nav -->
+      <div class="sec" style="padding-top:0">
+        <div class="home-section-label">📂 Explore</div>
+        <div class="quick-grid">
+          <div class="card quick-card" onclick="goPage('profile')">
+            <div class="quick-icon">🧑‍💻</div>
+            <div class="quick-name">Profile</div>
+            <div class="quick-desc">Personal info, skills &amp; interests</div>
+          </div>
+          <div class="card quick-card" onclick="goPage('experience')">
+            <div class="quick-icon">🌱</div>
+            <div class="quick-name">Experience</div>
+            <div class="quick-desc">Production, competition &amp; academic projects</div>
+          </div>
+          <div class="card quick-card" onclick="goPage('selfdev')">
+            <div class="quick-icon">📚</div>
+            <div class="quick-name">Self-Dev</div>
+            <div class="quick-desc">Certs, workshops &amp; online learning</div>
+          </div>
+          <div class="card quick-card" onclick="goPage('awards')">
+            <div class="quick-icon">🏆</div>
+            <div class="quick-name">Awards</div>
+            <div class="quick-desc">Hackathons &amp; recognition</div>
+          </div>
+          <div class="card quick-card" onclick="goPage('leadership')">
+            <div class="quick-icon">🤝</div>
+            <div class="quick-name">Leadership</div>
+            <div class="quick-desc">Volunteer work &amp; university activities</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact bar -->
+      <div class="sec" style="padding-top:0;padding-bottom:2rem">
+        <div class="home-section-label">📬 Contact</div>
+        <div class="home-contact-bar">
+          <a href="tel:0918543141" class="home-contact-item">
+            <span class="home-contact-ico">📞</span>
+            <div>
+              <div class="home-contact-label">Phone</div>
+              <div class="home-contact-val">091-854-3141</div>
+            </div>
+          </a>
+          <div class="home-contact-div"></div>
+          <a href="mailto:thnwathnxudcha@gmail.com" class="home-contact-item">
+            <span class="home-contact-ico">✉️</span>
+            <div>
+              <div class="home-contact-label">Email</div>
+              <div class="home-contact-val">thnwathnxudcha@gmail.com</div>
+            </div>
+          </a>
+          <div class="home-contact-div"></div>
+          <a href="https://github.com/GGbilly007" target="_blank" class="home-contact-item">
+            <span class="home-contact-ico">🐙</span>
+            <div>
+              <div class="home-contact-label">GitHub</div>
+              <div class="home-contact-val">GGbilly007</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ── PROFILE ── -->
+    <div class="page" id="page-profile">
+      <div class="sec">
+        <div class="sec-head">
+          <span class="sec-label">Profile</span>
+          <h2 class="sec-title">ข้อมูลส่วนตัว</h2>
+        </div>
+        <div class="profile-grid">
+          <!-- LEFT: Photo + info -->
+          <div class="profile-left">
+            <div class="profile-photo-wrap">
+              <img src="port/profile.jpg" alt="Profile Photo">
+            </div>
+            <div class="card profile-main" style="border-radius:14px">
+              <p class="profile-name">ธนวัฒน์ อุดชา</p>
+              <p class="profile-name" style="font-size:1.05rem;font-style:italic;margin-top:-8px">Thanawat Udcha</p>
+              <p class="profile-role">Full-Stack Developer &amp; UX Designer</p>
+              <p class="profile-bio">นักศึกษาที่มุ่งมั่นและหลงใหลในการพัฒนาระบบที่ใช้งานจริง มีประสบการณ์ hands-on จากหลายโปรเจกต์ทั้ง production, hackathon และ freelance เชื่อว่าเทคโนโลยีที่ดีต้องเข้าใจคนที่ใช้มันด้วย</p>
+              <div class="info-rows">
+                <div class="info-row"><span class="info-row-ico">🎂</span>
+                  <div><strong>อายุ</strong><span>19 ปี (05 / 09 / 2006)</span></div>
+                </div>
+                <div class="info-row"><span class="info-row-ico">🇹🇭</span>
+                  <div><strong>สัญชาติ</strong><span>ไทย</span></div>
+                </div>
+                <div class="info-row"><span class="info-row-ico">🏙️</span>
+                  <div><strong>ที่อยู่</strong><span>50 หมู่ 3 ต.ป่าแดด อ.เมือง เชียงใหม่ 50100</span></div>
+                </div>
+                <div class="info-row"><span class="info-row-ico">📞</span>
+                  <div><strong>โทรศัพท์</strong><a href="tel:0918543141">091-854-3141</a></div>
+                </div>
+                <div class="info-row"><span class="info-row-ico">✉️</span>
+                  <div><strong>อีเมล</strong><a href="mailto:thnwathnxudcha@gmail.com">thnwathnxudcha@gmail.com</a></div>
+                </div>
+                <div class="info-row"><span class="info-row-ico">🐙</span>
+                  <div><strong>GitHub</strong><a href="https://github.com/GGbilly007" target="_blank">GGbilly007</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-side">
+
+            <!-- Education -->
+            <div class="card skills-block">
+              <div style="font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-bottom:1rem;transition:color .5s">🎓 Education</div>
+              <div style="font-size:14px;font-weight:600;color:var(--ink);margin-bottom:2px;transition:color .5s">Bachelor of Science in Digital Industry Integration</div>
+              <div style="font-size:12px;color:var(--green);font-weight:500;margin-bottom:6px;transition:color .5s">College of Arts, Media and Technology · Chiang Mai University</div>
+              <div style="font-size:12px;color:var(--muted);margin-bottom:8px;transition:color .5s">2024 – ปัจจุบัน</div>
+              <div class="skill-chips">
+                <span class="skill-chip">⭐ GPA 3.40</span>
+                <span class="skill-chip">Digital Literacy</span>
+                <span class="skill-chip">Basic Programming</span>
+                <span class="skill-chip">Data Science</span>
+                <span class="skill-chip">Database Management</span>
+              </div>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="card skills-block">
+              <div style="font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-bottom:1rem;transition:color .5s">Technical Skills</div>
+              <div class="skill-group">
+                <div class="skill-group-name">Programming Languages</div>
+                <div class="skill-chips">
+                  <span class="skill-chip">Java</span>
+                  <span class="skill-chip">Python</span>
+                  <span class="skill-chip">JavaScript</span>
+                  <span class="skill-chip">PHP</span>
+                  <span class="skill-chip">C</span>
+                  <span class="skill-chip">HTML</span>
+                  <span class="skill-chip">CSS</span>
+                </div>
+              </div>
+              <div class="skill-group">
+                <div class="skill-group-name">Web & Database</div>
+                <div class="skill-chips">
+                  <span class="skill-chip">Node.js</span>
+                  <span class="skill-chip">MySQL</span>
+                  <span class="skill-chip">MongoDB</span>
+                  <span class="skill-chip">Git</span>
+                  <span class="skill-chip">GitHub</span>
+                </div>
+              </div>
+              <div class="skill-group">
+                <div class="skill-group-name">UX / Design</div>
+                <div class="skill-chips">
+                  <span class="skill-chip">Design Thinking</span>
+                  <span class="skill-chip">Persona</span>
+                  <span class="skill-chip">Empathy Map</span>
+                  <span class="skill-chip">User Journey</span>
+                  <span class="skill-chip">JTBD</span>
+                </div>
+              </div>
+              <div class="skill-group">
+                <div class="skill-group-name">AI / ML</div>
+                <div class="skill-chips">
+                  <span class="skill-chip">Computer Vision</span>
+                  <span class="skill-chip">Object Detection</span>
+                  <span class="skill-chip">NLP (basic)</span>
+                </div>
+              </div>
+              <div class="skill-group">
+                <div class="skill-group-name">Soft Skills</div>
+                <div class="skill-chips">
+                  <span class="skill-chip">Teamwork</span>
+                  <span class="skill-chip">Communication</span>
+                  <span class="skill-chip">Problem-solving</span>
+                  <span class="skill-chip">Time Management</span>
+                  <span class="skill-chip">Creativity</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Languages & Interests -->
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+              <div class="card interests-block">
+                <div style="font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:10px;transition:color .5s">🌐 Languages</div>
+                <div class="interest-list" style="flex-direction:column;gap:6px">
+                  <span class="interest-tag">🇹🇭 Thai — Native</span>
+                  <span class="interest-tag">🇬🇧 English — B1</span>
+                </div>
+              </div>
+              <div class="card interests-block">
+                <div style="font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:10px;transition:color .5s">งานอดิเรก</div>
+                <div class="interest-list">
+                  <span class="interest-tag">🔬 เทคโนโลยีใหม่ๆ</span>
+                  <span class="interest-tag">🧩 วิเคราะห์ปัญหา</span>
+                  <span class="interest-tag">🎮 เล่นเกม</span>
+                  <span class="interest-tag">🔍 หาทางลัดที่ดีกว่า</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── EXPERIENCE ── -->
+    <div class="page" id="page-experience">
+      <div class="sec">
+        <div class="sec-head">
+          <span class="sec-label">Experience</span>
+          <h2 class="sec-title">Professional Experience</h2>
+        </div>
+
+        <!-- Category filter tabs -->
+        <div class="cat-tabs" id="catTabs">
+          <button class="cat-tab active" data-cat="all">All Projects</button>
+          <button class="cat-tab" data-cat="prod">🏢 Production</button>
+          <button class="cat-tab" data-cat="comp">🥇 Competition</button>
+          <button class="cat-tab" data-cat="acad">🎓 Academic</button>
+        </div>
+
+        <div class="proj-grid" id="projGrid">
+
+          <!-- PRODUCTION -->
+          <div class="card proj-card" data-cat="prod">
+            <div class="proj-top">
+              <div>
+                <div class="proj-title">Smart CCTV Management System</div>
+                <div class="proj-role">Full-Stack Developer · Backend & Frontend</div>
+              </div>
+              <span class="badge badge-prod">Production</span>
+            </div>
+            <div class="proj-body">
+              <div class="proj-section">
+                <div class="proj-section-lbl">Project Overview & Target</div>
+                <p>ระบบจัดการกล้องวงจรปิดอัจฉริยะสำหรับ<strong>สำนักงานจังหวัดเชียงใหม่</strong>
+                  กลุ่มเป้าหมายคือเจ้าหน้าที่รัฐที่ต้องดูแลพื้นที่จำนวนมาก
+                  ช่วยลดภาระการตรวจตราด้วยตนเองและเพิ่มความปลอดภัยในพื้นที่สาธารณะ</p>
+              </div>
+              <div class="proj-section">
+                <div class="proj-section-lbl">สิ่งที่แก้</div>
+                <p>ระบบเดิมต้องดูกล้องแบบ manual ตลอดเวลา → พัฒนา dashboard แสดงผลแบบ real-time พร้อม AI นับจำนวนคน
+                  ตรวจจับ VIP และแจ้งเตือนอัตโนมัติ</p>
+              </div>
+              <div class="proj-section">
+                <div class="proj-section-lbl">สิ่งที่ได้เรียนรู้</div>
+                <p>การทำงานร่วมกับองค์กรจริง การ integrate AI model กับ backend, การออกแบบ dashboard
+                  สำหรับผู้ใช้งานที่ไม่ได้เป็น tech-savvy</p>
+              </div>
+              <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">Node.js</span><span
+                  class="proj-tag">MySQL</span><span class="proj-tag">Computer Vision</span><span
+                  class="proj-tag">Real-time Dashboard</span></div>
+              <div class="proj-gallery">
+                <div class="proj-shot">
+                  <img src="port/cctv 1.PNG" alt="Database Design">
+                </div>
+
+                <div class="proj-shot">
+                  <img src="port/cctv 2.PNG" alt="ER Diagram">
+                </div>
+
+                <div class="proj-shot">
+                  <img src="port/cctv3.PNG" alt="SQL Implementation">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card proj-card" data-cat="prod">
+            <div class="proj-top">
+              <div>
+                <div class="proj-title">Library Database & Management System</div>
+                <div class="proj-role">Lead Developer · System Design & Implementation</div>
+              </div>
+              <span class="badge badge-prod">Production</span>
+            </div>
+            <div class="proj-body">
+              <div class="proj-section">
+                <div class="proj-section-lbl">Project Overview & Target</div>
+                <p>ระบบจัดการห้องสมุดแบบดิจิทัลให้<strong>โรงเรียนศรีดอนชัย</strong>
+                  กลุ่มเป้าหมายคือบรรณารักษ์และนักเรียน ซึ่งเดิมใช้ระบบกระดาษที่ทำให้ข้อมูลหายบ่อย</p>
+              </div>
+              <div class="proj-section">
+                <div class="proj-section-lbl">สิ่งที่แก้</div>
+                <p>แปลงระบบกระดาษทั้งหมดเป็นดิจิทัล ใช้ barcode สแกนหนังสือ, ระบบยืม-คืนอัตโนมัติ, ค้นหาข้อมูลได้รวดเร็ว
+                  รองรับหนังสือหลายพันเล่ม</p>
+              </div>
+              <div class="proj-section">
+                <div class="proj-section-lbl">สิ่งที่ได้เรียนรู้</div>
+                <p>การออกแบบ database สำหรับข้อมูลจำนวนมาก, การจัดการ requirements กับลูกค้าจริง, การส่งมอบงานตรงเวลา →
+                  โรงเรียนมอบค่าตอบแทน ฿10,000</p>
+              </div>
+              <div class="proj-tags"><span class="proj-tag">PHP</span><span class="proj-tag">MySQL</span><span
+                  class="proj-tag">Barcode</span><span class="proj-tag">JavaScript</span><span
+                  class="proj-tag">HTML/CSS</span></div>
+              <div class="proj-gallery">
+                <div class="proj-shot">
+                  <img src="port/library1.jpg" alt="Database Design">
+                </div>
+
+                <div class="proj-shot">
+                  <img src="port/library2.jpg" alt="ER Diagram">
+                </div>
+
+                <div class="proj-shot">
+                  <img src="port/library3.jpg" alt="SQL Implementation">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card proj-card" data-cat="prod">
+            <div class="proj-top">
+              <div>
+                <div class="proj-title">Smart Assignment Platform</div>
+                <div class="proj-role">Full-Stack Developer · AI Integration</div>
+              </div>
+              <span class="badge badge-prod">Production</span>
+            </div>
+            <div class="proj-body">
+              <div class="proj-section">
+                <div class="proj-section-lbl">Project Overview & Target</div>
+                <p>แพลตฟอร์มช่วยสอนแบบ AI สำหรับ<strong>โรงเรียนแม่ฮ่องสอน</strong> ที่มีครูเพียง ~10 คนต้องสอนหลายวิชา
+                  กลุ่มเป้าหมายคือครูในโรงเรียนขนาดเล็กและห่างไกล</p>
+              </div>
+              <div class="proj-section">
+                <div class="proj-section-lbl">สิ่งที่แก้</div>
+                <p>ครูไม่มีเวลาสร้างแบบฝึกหัดใหม่ทุกวัน → ระบบ AI สร้างแบบฝึกหัดหลากหลายโดยอัตโนมัติ
+                  แชร์สื่อการสอนข้ามวิชาได้ พร้อม chatbot ช่วยนักเรียน</p>
+              </div>
+              <div class="proj-section">
+                <div class="proj-section-lbl">สิ่งที่ได้เรียนรู้</div>
+                <p>การนำ AI มาใช้งานจริงในบริบทการศึกษา, UX สำหรับครูที่ไม่ชำนาญเทคโนโลยี, การออกแบบระบบที่ลด cognitive
+                  load</p>
+              </div>
+              <div class="proj-tags"><span class="proj-tag">Node.js</span><span class="proj-tag">MongoDB</span><span
+                  class="proj-tag">AI/NLP</span><span class="proj-tag">JavaScript</span><span
+                  class="proj-tag">EdTech</span></div>
+              <div class="proj-gallery">
+                <div class="proj-shot">
+                  <img src="port/assignment1.png" alt="Database Design">
+                </div>
+
+                <div class="proj-shot">
+                  <img src="port/assignment2.png" alt="ER Diagram">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- COMPETITION -->
+          <div class="card proj-card" data-cat="comp">
+            <div class="proj-top">
+              <div>
+                <div class="proj-title">Mongmai — AI Vision Aid for Visually Impaired</div>
+                <div class="proj-role">Lead Developer · AI & Hardware Integration · Team: Third Eyes</div>
+              </div>
+              <span class="badge badge-comp">Competition</span>
+            </div>
+            <div class="proj-body">
+              <div class="proj-section">
+                <div class="proj-section-lbl">Project Overview & Target</div>
+                <p>อุปกรณ์ wearable ที่ใช้ AI ตรวจจับสิ่งกีดขวางและประเมินระยะทางแบบ real-time
+                  สำหรับ<strong>ผู้พิการทางสายตา</strong> ส่งเสริมความปลอดภัยและความเป็นอิสระในชีวิตประจำวัน</p>
+              </div>
+              <div class="proj-section">
+                <div class="proj-section-lbl">สิ่งที่แก้</div>
+                <p>ผู้พิการทางสายตาเสี่ยงอันตรายระหว่างเดินทาง → ระบบแจ้งเตือนด้วยเสียงแบบ real-time ผ่าน earphone,
+                  บอกทิศทางและระยะของอุปสรรค</p>
+              </div>
+              <div class="proj-section">
+                <div class="proj-section-lbl">สิ่งที่ได้เรียนรู้</div>
+                <p>การพัฒนา embedded AI, การออกแบบ UX สำหรับคนพิการ (accessibility-first),
+                  การนำเสนอต่อกรรมการในระดับประเทศ, การทำงานเป็นทีมภายใต้แรงกดดัน</p>
+              </div>
+              <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">Object
+                  Detection</span><span class="proj-tag">Raspberry Pi</span><span class="proj-tag">Audio TTS</span><span
+                  class="proj-tag">Accessibility</span></div>
+              <!-- Portfolio images from hackathon -->
+              <div class="proj-gallery">
+                <div class="proj-shot">
+                  <img src="port/hack1.png" alt="Database Design">
+                </div>
+
+                <div class="proj-shot">
+                  <img src="port/hack2.png" alt="ER Diagram">
+                </div>
+
+                <div class="proj-shot">
+                  <img src="port/hack3.png" alt="SQL Implementation">
+                </div>
+              </div>
+            </div><!-- /proj-body -->
+          </div><!-- /proj-card Mongmai -->
+
+          <!-- ACADEMIC -->
+          <div class="card proj-card" data-cat="acad">
+            <div class="proj-top">
+              <div>
+                <div class="proj-title">Database System Design — Academic Project</div>
+                <div class="proj-role">Backend Developer · Database Architect</div>
+              </div>
+              <span class="badge badge-acad">Academic</span>
+            </div>
+            <div class="proj-body">
+              <div class="proj-section">
+                <div class="proj-section-lbl">Project Overview</div>
+                <p>โปรเจกต์รายวิชา Database Systems ออกแบบและพัฒนาระบบฐานข้อมูลสำหรับ use case จริง ครอบคลุมการออกแบบ ER
+                  diagram, normalization, stored procedures และ query optimization</p>
+              </div>
+              <div class="proj-section">
+                <div class="proj-section-lbl">สิ่งที่ได้เรียนรู้</div>
+                <p>หลักการ ACID, การออกแบบ schema ที่ scale ได้, การเขียน complex query, วิธีคิดเชิงระบบสำหรับ data
+                  modeling</p>
+              </div>
+              <div class="proj-tags">
+                <span class="proj-tag">MySQL</span>
+                <span class="proj-tag">ER Diagram</span>
+                <span class="proj-tag">Normalization</span>
+                <span class="proj-tag">SQL</span>
+              </div>
+              <div class="proj-gallery">
+                <div class="proj-shot"><img src="port/hack1.png" alt="Database Design"></div>
+                <div class="proj-shot"><img src="port/hack2.png" alt="ER Diagram"></div>
+                <div class="proj-shot"><img src="port/hack3.png" alt="SQL Implementation"></div>
+              </div>
+            </div>
+          </div><!-- /proj-card Academic -->
+
+          <div class="card proj-card" data-cat="acad">
+            <div class="proj-top">
+              <div>
+                <div class="proj-title">Smart Assignment Platform</div>
+                <div class="proj-role">Full-Stack Developer · AI Integration</div>
+              </div>
+              <span class="badge badge-acad">Academic</span>
+            </div>
+            <div class="proj-body">
+              <div class="proj-section">
+                <div class="proj-section-lbl">Project Overview & Target</div>
+                <p>แพลตฟอร์มช่วยสอนแบบ AI สำหรับ<strong>โรงเรียนแม่ฮ่องสอน</strong> ที่มีครูเพียง ~10 คนต้องสอนหลายวิชา
+                  กลุ่มเป้าหมายคือครูในโรงเรียนขนาดเล็กและห่างไกล</p>
+              </div>
+              <div class="proj-section">
+                <div class="proj-section-lbl">สิ่งที่แก้</div>
+                <p>ครูไม่มีเวลาสร้างแบบฝึกหัดใหม่ทุกวัน → ระบบ AI สร้างแบบฝึกหัดหลากหลายโดยอัตโนมัติ
+                  แชร์สื่อการสอนข้ามวิชาได้ พร้อม chatbot ช่วยนักเรียน</p>
+              </div>
+              <div class="proj-section">
+                <div class="proj-section-lbl">สิ่งที่ได้เรียนรู้</div>
+                <p>การนำ AI มาใช้งานจริงในบริบทการศึกษา, UX สำหรับครูที่ไม่ชำนาญเทคโนโลยี, การออกแบบระบบที่ลด cognitive
+                  load</p>
+              </div>
+              <div class="proj-tags">
+                <span class="proj-tag">Node.js</span>
+                <span class="proj-tag">MongoDB</span>
+                <span class="proj-tag">AI/NLP</span>
+                <span class="proj-tag">JavaScript</span>
+                <span class="proj-tag">EdTech</span>
+              </div>
+              <div class="proj-gallery">
+                <div class="proj-shot"><img src="port/assignment1.png" alt="Assignment Platform"></div>
+                <div class="proj-shot"><img src="port/assignment2.png" alt="Assignment Platform"></div>
+              </div>
+            </div>
+          </div><!-- /proj-card Smart Assignment -->
+        </div><!-- /proj-grid -->
+      </div><!-- /sec -->
+    </div><!-- /page-experience -->
+
+    <!-- ── SELF-DEV ── -->
+    <div class="page" id="page-selfdev">
+      <div class="sec">
+        <div class="sec-head">
+          <span class="sec-label">Self-Development</span>
+          <h2 class="sec-title">การเรียนรู้นอกห้องเรียน</h2>
+        </div>
+
+        <div class="sdev-list">
+
+          <div class="sdev-item card">
+            <div class="sdev-left">
+              <div class="sdev-icon">🎨</div>
+            </div>
+            <div class="sdev-right">
+              <div class="sdev-meta">
+                <span class="sdev-tag cert">Certificate</span>
+                <span class="sdev-date">ก.ค. 2568</span>
+              </div>
+              <div class="sdev-name">UX/UI Foundation Program</div>
+              <div class="sdev-org">TCC Technology · Chiang Mai University</div>
+              <div class="sdev-desc">หลักสูตร 4 วัน ครอบคลุม user-centred design, Persona, JTBD, Empathy Map, User Journey Mapping และหลักการ 80/20</div>
+            </div>
+          </div>
+
+          <div class="sdev-item card">
+            <div class="sdev-left">
+              <div class="sdev-icon">🎨</div>
+            </div>
+            <div class="sdev-right">
+              <div class="sdev-meta">
+                <span class="sdev-tag workshop">Workshop</span>
+                <span class="sdev-date">ก.ค. 2568</span>
+              </div>
+              <div class="sdev-name">UX/UI Design & Problem-Solving Training</div>
+              <div class="sdev-org">TCC Technology · Chiang Mai University</div>
+              <div class="sdev-desc">Workshop เชิงปฏิบัติการ 4 วัน เน้นกระบวนการ design thinking ตั้งแต่วิเคราะห์ปัญหาจนถึงออกแบบโปรโตไทป์</div>
+            </div>
+          </div>
+
+          <div class="sdev-item card">
+            <div class="sdev-left">
+              <div class="sdev-icon">⚡</div>
+            </div>
+            <div class="sdev-right">
+              <div class="sdev-meta">
+                <span class="sdev-tag workshop">Workshop</span>
+                <span class="sdev-date">2568</span>
+              </div>
+              <div class="sdev-name">HYLIFE Hackathon 2025 — Pre-event Workshop</div>
+              <div class="sdev-org">HYLIFE Group · Chiang Mai University</div>
+              <div class="sdev-desc">อบรมในหัวข้อ Smart Manufacturing & Health Products ครอบคลุม business model, pitch presentation และ rapid prototyping</div>
+            </div>
+          </div>
+
+          <div class="sdev-item card">
+            <div class="sdev-left">
+              <div class="sdev-icon">👥</div>
+            </div>
+            <div class="sdev-right">
+              <div class="sdev-meta">
+                <span class="sdev-tag program">Program</span>
+                <span class="sdev-date">ต่อเนื่อง</span>
+              </div>
+              <div class="sdev-name">YoungDev Mentoring Program</div>
+              <div class="sdev-org">Chiang Mai University</div>
+              <div class="sdev-desc">เรียนรู้ทั้งด้านเทคนิคและ soft skills จนได้รับเลือกเป็น Teaching Assistant ในโปรแกรมเดียวกัน</div>
+            </div>
+          </div>
+
+          <div class="sdev-item card">
+            <div class="sdev-left">
+              <div class="sdev-icon">💻</div>
+            </div>
+            <div class="sdev-right">
+              <div class="sdev-meta">
+                <span class="sdev-tag self">Self-study</span>
+                <span class="sdev-date">ต่อเนื่อง</span>
+              </div>
+              <div class="sdev-name">Web Development Fundamentals</div>
+              <div class="sdev-org">GitHub · Stack Overflow · YouTube</div>
+              <div class="sdev-desc">เรียนรู้ผ่าน project-based learning ครอบคลุม HTML/CSS/JS, Node.js, REST API และ database design</div>
+            </div>
+          </div>
+
+          <div class="sdev-item card">
+            <div class="sdev-left">
+              <div class="sdev-icon">🤖</div>
+            </div>
+            <div class="sdev-right">
+              <div class="sdev-meta">
+                <span class="sdev-tag self">Self-study</span>
+                <span class="sdev-date">ต่อเนื่อง</span>
+              </div>
+              <div class="sdev-name">Computer Vision & AI Basics</div>
+              <div class="sdev-org">Python Docs · OpenCV · YouTube</div>
+              <div class="sdev-desc">ศึกษา object detection, image processing และการ deploy AI model บน edge device สำหรับโปรเจกต์ Mongmai</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ── AWARDS ── -->
+    <div class="page" id="page-awards">
+      <div class="sec">
+        <div class="sec-head">
+          <span class="sec-label">Awards</span>
+          <h2 class="sec-title">รางวัลและความสำเร็จ</h2>
+        </div>
+
+        <div class="award-list">
+
+          <div class="card award-item">
+            <div class="award-medal">🥈</div>
+            <div class="award-body">
+              <div class="award-meta">
+                <span class="award-badge competition">Competition</span>
+                <span class="award-year">2025</span>
+              </div>
+              <div class="award-name">2nd Place — Mongmai AI Navigation</div>
+              <div class="award-event">HYLIFE Hackathon 2025 · Smart Manufacturing & Health Products</div>
+              <div class="award-desc">พัฒนา AI wearable ช่วยผู้พิการทางสายตาในฐานะทีม Third Eyes นำเสนอต่อกรรมการจากวงการอุตสาหกรรมระดับประเทศ</div>
+            </div>
+          </div>
+
+          <div class="card award-item">
+            <div class="award-medal">📜</div>
+            <div class="award-body">
+              <div class="award-meta">
+                <span class="award-badge competition">Competition</span>
+                <span class="award-year">2025</span>
+              </div>
+              <div class="award-name">Finalist — Smart Manufacturing & Health Products</div>
+              <div class="award-event">HYLIFE Hackathon 2025 · Chiang Mai University</div>
+              <div class="award-desc">ผ่านการคัดเลือกเข้ารอบ Final นำเสนอผลงานบนเวทีใหญ่พร้อมทีมจากทั่วประเทศ</div>
+            </div>
+          </div>
+
+          <div class="card award-item">
+            <div class="award-medal">💰</div>
+            <div class="award-body">
+              <div class="award-meta">
+                <span class="award-badge recognition">Recognition</span>
+                <span class="award-year">2568</span>
+              </div>
+              <div class="award-name">Paid Freelance — Library System · ฿10,000</div>
+              <div class="award-event">โรงเรียนศรีดอนชัย</div>
+              <div class="award-desc">รายได้จริงจากงาน freelance ครั้งแรก จากการพัฒนาและส่งมอบระบบห้องสมุดดิจิทัลตรงเวลา</div>
+            </div>
+          </div>
+
+          <div class="card award-item">
+            <div class="award-medal">🎓</div>
+            <div class="award-body">
+              <div class="award-meta">
+                <span class="award-badge recognition">Recognition</span>
+                <span class="award-year">2568</span>
+              </div>
+              <div class="award-name">UX/UI Foundation Certificate</div>
+              <div class="award-event">TCC Technology · Chiang Mai University</div>
+              <div class="award-desc">ผ่านหลักสูตร UX/UI Foundation Program อย่างเป็นทางการ ได้รับใบประกาศนียบัตรจากบริษัท ที.ซี.ซี. เทคโนโลยี จำกัด</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ── LEADERSHIP ── -->
+    <div class="page" id="page-leadership">
+      <div class="sec">
+        <div class="sec-head">
+          <span class="sec-label">Leadership</span>
+          <h2 class="sec-title">Leadership, Volunteer & งานพิเศษ</h2>
+        </div>
+        <div class="lead-grid">
+
+          <div class="card lead-card">
+            <div class="lead-top">
+              <div>
+                <div class="lead-title">YoungDev Teacher Assistant</div>
+                <div style="font-size:12px;color:var(--muted);margin-top:2px;transition:color .5s">Chiang Mai
+                  University · 2568–ปัจจุบัน</div>
+              </div>
+              <span class="lead-role-tag">Teaching Assistant</span>
+            </div>
+            <p class="lead-desc">
+              ช่วยอาจารย์ในการให้คำแนะนำนักเรียนมัธยมเกี่ยวกับกระบวนการคิดและการออกแบบแนวทางแก้ไขปัญหา
+              สำหรับการแข่งขัน Hackathon ใช้ผลงานของตนเองเป็นกรณีศึกษาในการอธิบายแนวคิด วิธีการแก้ปัญหา
+              และกระบวนการออกแบบเชิงระบบ สร้างแรงบันดาลใจให้น้องๆ ผ่านประสบการณ์จริง</p>
+            <div class="lead-soft">
+              <div class="lead-soft-lbl">Soft Skills ที่ได้รับ</div>
+              <div class="soft-chips"><span class="soft-chip">🗣️ Communication</span><span class="soft-chip">👥
+                  Mentoring</span><span class="soft-chip">💡 Knowledge Transfer</span><span class="soft-chip">🤝
+                  Teamwork</span><span class="soft-chip">⏱️ Time Management</span></div>
+            </div>
+          </div>
+
+          <div class="card lead-card">
+            <div class="lead-top">
+              <div>
+                <div class="lead-title">Hackathon Advisor & Mentor</div>
+                <div style="font-size:12px;color:var(--muted);margin-top:2px;transition:color .5s">YoungDev Program ·
+                  Chiang Mai University · 2568</div>
+              </div>
+              <span class="lead-role-tag">Advisor</span>
+            </div>
+            <p class="lead-desc">ให้คำปรึกษาทีมนักเรียนมัธยมในการพัฒนาโปรเจกต์เพื่อส่งแข่งขัน Hackathon
+              เสนอแนวคิดเพื่อปรับปรุงและพัฒนาโปรเจกต์ให้น่าสนใจ มีความเป็นไปได้ และสามารถนำไปใช้งานจริงได้
+              ช่วยให้ทีมนักเรียนสามารถผ่านเข้ารอบและแสดงผลงานบนเวที CMU</p>
+            <div class="lead-soft">
+              <div class="lead-soft-lbl">Soft Skills ที่ได้รับ</div>
+              <div class="soft-chips"><span class="soft-chip">🧩 Problem Solving</span><span class="soft-chip">🎯
+                  Strategic Thinking</span><span class="soft-chip">❤️ EQ</span><span class="soft-chip">👂 Active
+                  Listening</span><span class="soft-chip">💪 Leadership</span></div>
+            </div>
+          </div>
+
+          <div class="card lead-card">
+            <div class="lead-top">
+              <div>
+                <div class="lead-title">HYLIFE Hackathon Team Lead</div>
+                <div style="font-size:12px;color:var(--muted);margin-top:2px;transition:color .5s">HYLIFE Hackathon
+                  2025 · Team: Third Eyes</div>
+              </div>
+              <span class="lead-role-tag">Team Lead</span>
+            </div>
+            <p class="lead-desc">นำทีม Third Eyes ในการแข่งขัน Hackathon ระดับประเทศ รับผิดชอบทั้งการประสานงานทีม,
+              การแบ่งหน้าที่, การตัดสินใจด้านเทคนิค และการนำเสนอผลงานต่อกรรมการ ท่ามกลางแรงกดดันและเวลาจำกัด
+              นำทีมคว้ารางวัลชนะเลิศอันดับ 2</p>
+            <div class="lead-soft">
+              <div class="lead-soft-lbl">Soft Skills ที่ได้รับ</div>
+              <div class="soft-chips"><span class="soft-chip">👑 Leadership</span><span class="soft-chip">🗣️
+                  Presentation</span><span class="soft-chip">⚡ Decision Making</span><span class="soft-chip">🔥
+                  Resilience</span><span class="soft-chip">🤝 Collaboration</span><span class="soft-chip">🎭 EQ</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card lead-card">
+            <div class="lead-top">
+              <div>
+                <div class="lead-title">Freelance Developer — Community Service</div>
+                <div style="font-size:12px;color:var(--muted);margin-top:2px;transition:color .5s">Mae Hoi Ngoen
+                  School · Sridonchai School · Chiang Mai Provincial Office</div>
+              </div>
+              <span class="lead-role-tag">Volunteer + Freelance</span>
+            </div>
+            <p class="lead-desc">ใช้ความสามารถด้านการพัฒนาซอฟต์แวร์เพื่อช่วยเหลือโรงเรียนขนาดเล็กและหน่วยงานรัฐในชุมชน
+              พัฒนาระบบที่ช่วยลดภาระงานครู ปรับปรุงความปลอดภัยของพื้นที่สาธารณะ และทำให้ข้อมูลการศึกษาเข้าถึงง่ายขึ้น
+              — งานที่สร้างผลกระทบจริงต่อสังคมรอบข้าง</p>
+            <div class="lead-soft">
+              <div class="lead-soft-lbl">Soft Skills ที่ได้รับ</div>
+              <div class="soft-chips"><span class="soft-chip">🌱 Social Responsibility</span><span class="soft-chip">🤝
+                  Stakeholder Mgmt</span><span class="soft-chip">📋 Project
+                  Management</span><span class="soft-chip">🎯 Empathy</span><span class="soft-chip">⏱️ Delivery</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>© 2026 Thanawat Udcha | CAMT CMU</footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
